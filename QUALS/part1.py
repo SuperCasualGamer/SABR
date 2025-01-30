@@ -17,6 +17,7 @@ def perform_regression(csv_file, target_variable):
     
     # Perform the regression
     model = sm.OLS(Y, X).fit()
+    # print(model.summary())
     return model
     
 def make_prediction_from_csv(model, new_data_csv):
